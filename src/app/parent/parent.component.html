@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light" style="padding: 30px;margin: 40px; justify-content:center">
+    <span class="navbar-brand mb-0 h1">Angular Component Communication</span>
+  </nav>
+  <div class="alert alert-primary" role="alert" style="padding: 30px;margin: 40px;">
+    <h3>Parent Component:</h3>
+    <h5>{{childMessage}}</h5>
+  </div>
+  <app-child (childMessage)="GetMessage($event)"></app-child>
+  <div class="divider"><div>
